@@ -11,10 +11,14 @@ import (
 	"math"
 )
 
+const (
+	SidesCircle   int = 0
+	SidesTriangle int = 3
+	SidesSquare   int = 4
+)
+
 func CalcSquare(sideLen float64, sidesNum int) float64 {
-	const SidesTriangle = 3
-	const SidesCircle = 0
-	const SidesSquare = 4
+
 	if sidesNum == SidesCircle {
 		return 2 * math.Pi * math.Pow(sideLen, 2)
 	} else if sidesNum == SidesSquare {
