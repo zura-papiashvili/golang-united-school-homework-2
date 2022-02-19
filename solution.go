@@ -20,7 +20,7 @@ const (
 func CalcSquare(sideLen float64, sidesNum int) float64 {
 
 	if sidesNum == SidesCircle {
-		return 2 * math.Pi * math.Pow(sideLen, 2)
+		return math.Pi * math.Pow(sideLen, 2)
 	} else if sidesNum == SidesSquare {
 		return math.Pow(sideLen, 2)
 	} else if sidesNum == SidesTriangle {
